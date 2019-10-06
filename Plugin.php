@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\Css;
+namespace Kanboard\Plugin\ModernCSS;
 
 use Kanboard\Core\Plugin\Base;
 
