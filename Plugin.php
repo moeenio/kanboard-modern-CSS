@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\ModernCSS;
+namespace Kanboard\Plugin\KanboardModernCss;
 
 use Kanboard\Core\Plugin\Base;
 
@@ -8,31 +8,31 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        $this->hook->on("template:layout:css", array("template" => "plugins/Css/skin.css"));
+        $this->hook->on("template:layout:css", array("template" => "plugins/KanboardModernCss/skin.css"));
     }
 
     public function getPluginName()
     {
-        return 'Css';
+        return 'KanboardModernCSS';
     }
 
     public function getPluginDescription()
     {
-        return t('This plugin add a new stylesheet and override default styles.');
+        return t('A modern CSS theme for Kanboard');
     }
 
     public function getPluginAuthor()
     {
-        return 'Author';
+        return 'Locness';
     }
 
     public function getPluginVersion()
     {
-        return '0.0.1';
+        return '0.1.0';
     }
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/kanboard/plugin-example-css';
+        return 'https://github.com/locness3/kanboard-modern-CSS';
     }
 }
