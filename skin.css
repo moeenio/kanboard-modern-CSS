@@ -46,6 +46,8 @@ header a .fa, header h1 {
   width: 100%;
   padding: 5px 5px 5px 15px;
   border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 .select-dropdown-input-container input.select-dropdown-input:focus {
@@ -64,6 +66,7 @@ header a .fa, header h1 {
 
 .select-dropdown-input-container .select-dropdown-chevron {
   color: white;
+  top: 7px;
 }
 
 .select-dropdown-input-container input.select-dropdown-input:focus + .select-dropdown-chevron {
@@ -109,7 +112,12 @@ header .notification a .fa {
   background-color: #00000030;
 }
 
-table td {
+#board {
+  border-collapse: initial;
+  border-spacing: 15px 0;
+}
+
+#board td {
   border: none;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
