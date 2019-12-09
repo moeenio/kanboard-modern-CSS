@@ -5,7 +5,9 @@ body {
 }
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 .btn {
@@ -28,7 +30,8 @@ header {
   padding: 15px;
 }
 
-header a .fa, header h1 {
+header a .fa,
+header h1 {
   color: white;
 }
 
@@ -86,7 +89,8 @@ header .notification a .fa {
   padding-right: 0;
 }
 
-#main .page-header, .project-header {
+#main .page-header,
+.project-header {
   width: calc(100% + 20px);
   margin-left: -10px;
   margin-top: -5px;
@@ -98,7 +102,8 @@ header .notification a .fa {
   margin-top: 0;
 }
 
-#main .page-header ul li, #main .page-header ul a {
+#main .page-header ul li,
+#main .page-header ul a {
   padding: 5px;
 }
 
@@ -121,6 +126,7 @@ header .notification a .fa {
   border: none;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
+  background-color: #fdfdfd;
 }
 
 .board-column-header {
@@ -166,6 +172,7 @@ header .notification a .fa {
   padding-right: 0;
 }
 
-.board-add-icon a i, .board-add-icon a:hover i {
+.board-add-icon a i,
+.board-add-icon a:hover i {
   color: #333;
 }
