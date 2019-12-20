@@ -1,7 +1,8 @@
 /* Variables - Change colors here */
-
+:root {
 --accent-color: #6C01DF;
-
+}
+  
 @import url('https://rsms.me/inter/inter.css');
 
 /* Fonts */
