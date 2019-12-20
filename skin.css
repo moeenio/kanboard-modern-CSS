@@ -1,14 +1,18 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 @import url('https://rsms.me/inter/inter.css');
+
+/* Fonts */
 
 body {
   font-family: "Inter", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter var', sans-serif;
-  }
+  html { font-family: 'Inter var', sans-serif; }
 }
+
+/* Buttons */
 
 .btn {
   border-radius: 5px;
@@ -22,6 +26,8 @@ body {
   border-color: #357ae8;
 }
 
+/* Header */
+
 header {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -30,14 +36,15 @@ header {
   padding: 15px;
 }
 
-header a .fa,
-header h1 {
+header a .fa, header h1 {
   color: white;
 }
 
 .title-container h1 {
   font-size: 1em;
 }
+
+/* Header jump to  bar */
 
 .select-dropdown-input-container {
   border: none;
@@ -57,9 +64,49 @@ header h1 {
   background-color: white;
 }
 
+.select-dropdown-input-container input.select-dropdown-input::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.select-dropdown-input-container input.select-dropdown-input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.select-dropdown-input-container input.select-dropdown-input:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.select-dropdown-input-container input.select-dropdown-input::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
 .select-dropdown-input-container input.select-dropdown-input::placeholder {
   color: white;
   opacity: 1;
+}
+
+.select-dropdown-input-container input.select-dropdown-input:focus::-webkit-input-placeholder {
+  color: #dedede;
+  opacity: initial;
+}
+
+.select-dropdown-input-container input.select-dropdown-input:focus::-moz-placeholder {
+  color: #dedede;
+  opacity: initial;
+}
+
+.select-dropdown-input-container input.select-dropdown-input:focus:-ms-input-placeholder {
+  color: #dedede;
+  opacity: initial;
+}
+
+.select-dropdown-input-container input.select-dropdown-input:focus::-ms-input-placeholder {
+  color: #dedede;
+  opacity: initial;
 }
 
 .select-dropdown-input-container input.select-dropdown-input:focus::placeholder {
@@ -76,6 +123,8 @@ header h1 {
   color: #555;
 }
 
+/* Header links */
+
 header a:hover {
   background-color: #ffffff50;
 }
@@ -89,8 +138,9 @@ header .notification a .fa {
   padding-right: 0;
 }
 
-#main .page-header,
-.project-header {
+/* Page headers */
+
+#main .page-header, .project-header {
   width: calc(100% + 20px);
   margin-left: -10px;
   margin-top: -5px;
@@ -102,8 +152,7 @@ header .notification a .fa {
   margin-top: 0;
 }
 
-#main .page-header ul li,
-#main .page-header ul a {
+#main .page-header ul li, #main .page-header ul a {
   padding: 5px;
 }
 
@@ -116,6 +165,8 @@ header .notification a .fa {
 #main .page-header ul a:hover {
   background-color: #00000030;
 }
+
+/* Task board */
 
 #board {
   border-collapse: initial;
@@ -172,7 +223,6 @@ header .notification a .fa {
   padding-right: 0;
 }
 
-.board-add-icon a i,
-.board-add-icon a:hover i {
+.board-add-icon a i, .board-add-icon a:hover i {
   color: #333;
 }
