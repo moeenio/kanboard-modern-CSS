@@ -1,4 +1,6 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+/* Variables - Change colors here */
+
+--accent-color: #6C01DF;
 
 @import url('https://rsms.me/inter/inter.css');
 
@@ -19,7 +21,7 @@ body {
 }
 
 .btn-blue {
-  border-color: #4d90fe;
+  border-color: var(--accent-color);
 }
 
 .btn-blue:hover {
@@ -32,7 +34,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #4d90fe;
+  background-color: var(--accent-color);
   padding: 15px;
 }
 
