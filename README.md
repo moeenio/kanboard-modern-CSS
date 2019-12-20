@@ -1,3 +1,4 @@
+![Plugin screenshot](/screenshots/main.png)
 # Kanboard modern CSS
 
 A CSS plugin for Kanboard to make it look more mdoern, while keeping a minimalistic look.
