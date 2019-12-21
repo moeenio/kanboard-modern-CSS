@@ -181,16 +181,17 @@ header .notification a .fa {
   border-spacing: 15px 0;
 }
 
-#board td {
+#board td, .board-column-header {
   border: none;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
 }
 
 .board-column-header {
-  border: none;
-  border-bottom: 1px solid #eee;
+  border-radius: 5px 5px 0 0;
+}
+
+#board td {
+  border-radius: 0 0 5px 5px;
 }
 
 .board-column-header .board-column-expanded {
