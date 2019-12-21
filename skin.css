@@ -7,8 +7,10 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 /* Variables - Change colors here */
+
 :root {
---accent-color: #6C01DF;
+  --accent-color: #6C01DF;
+  --accent-color-transparent: #6C01DF20;
 }
   
 @import url('https://rsms.me/inter/inter.css');
@@ -36,6 +38,17 @@ body {
 
 .btn-blue:hover {
   border-color: #357ae8;
+}
+
+/* Dropdowns */
+
+.dropdown-submenu-open li:not(.no-hover):hover {
+  background-color: var(--accent-color-transparent);
+  color: var(--accent-color);
+}
+
+.dropdown-submenu-open li:not(.no-hover):hover * {
+  color: var(--accent-color);
 }
 
 /* Header */
