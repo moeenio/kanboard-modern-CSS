@@ -25,6 +25,7 @@ body {
 
 .btn-blue {
   border-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .btn-blue:hover {
