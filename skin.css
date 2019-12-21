@@ -241,3 +241,27 @@ header .notification a .fa {
 .board-add-icon a i, .board-add-icon a:hover i {
   color: #333;
 }
+
+.board-column-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.board-column-title .dropdown-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.board-column-title .dropdown-menu .fa {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.board-column-title .dropdown-menu .fa:before {
+  content: "\f141";
+}
