@@ -4,7 +4,7 @@
    https://github.com/locness3/kanboard-modern-CSS
 */
 
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 /* Variables - Change colors here */
 
@@ -277,4 +277,26 @@ header .notification a .fa {
 
 .board-column-title .dropdown-menu .fa:before {
   content: "\f141";
+}
+
+.views li {
+  text-align: center;
+  padding: 8px 8px;
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.views li.active, .views li:hover {
+  background-color: var(--accent-color-transparent);
+  color: var(--accent-color);
+}
+
+.views li a, .views li .fa {
+  color: inherit !important;
+}
+
+.views li:hover a {
+  text-decoration: none;
 }
