@@ -1,10 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* 
    Kanboard modern CSS
    By Locness
    https://github.com/locness3/kanboard-modern-CSS
 */
 
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 /* Variables - Change colors here */
 
@@ -41,6 +47,10 @@ body {
 }
 
 /* Dropdowns */
+
+.dropdown-submenu-open {
+  border: none !important;
+}
 
 .dropdown-submenu-open li:not(.no-hover):hover {
   background-color: var(--accent-color-transparent);
@@ -165,7 +175,7 @@ header .notification a .fa {
 
 /* Page headers */
 
-#main .page-header, .project-header {
+#main > .page-header, .project-header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: calc(100% + 20px);
@@ -175,21 +185,21 @@ header .notification a .fa {
   border-bottom: 1px solid #eee;
 }
 
-#main .page-header ul {
+#main > .page-header ul {
   margin-top: 0;
 }
 
-#main .page-header ul li, #main .page-header ul a {
+#main > .page-header ul li, #main .page-header ul a {
   padding: 5px;
 }
 
-#main .page-header ul a {
+#main > .page-header ul a {
   color: #333;
   text-decoration: none;
   border-radius: 5px;
 }
 
-#main .page-header ul a:hover {
+#main > .page-header ul a:hover {
   background-color: #00000030;
 }
 
@@ -222,12 +232,12 @@ header .notification a .fa {
   align-items: center;
 }
 
-.board-add-icon {
-  height: 35px;
+.board-add-icon, .board-column-expanded .dropdown i {
+  height: 35px !important;
   min-width: 35px;
 }
 
-.board-add-icon a {
+.board-add-icon a, .board-column-expanded .dropdown i {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,21 +248,26 @@ header .notification a .fa {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 50px;
   text-decoration: none !important;
+  border-radius: 5px;
 }
 
-.board-add-icon a:hover {
-  background-color: #00000050;
+.board-add-icon a:hover, .board-column-expanded .dropdown i:hover {
+  color: var(--accent-color);
+  background-color: var(--accent-color-transparent);
 }
 
-.board-add-icon a i {
+.board-add-icon a i, .board-column-expanded .dropdown i {
   font-size: 1em;
   padding-right: 0;
 }
 
-.board-add-icon a i, .board-add-icon a:hover i {
+.board-add-icon a i {
   color: #333;
+}
+
+.board-add-icon a:hover i {
+  color: var(--accent-color);
 }
 
 .board-column-title {
@@ -300,3 +315,4 @@ header .notification a .fa {
 .views li:hover a {
   text-decoration: none;
 }
+
