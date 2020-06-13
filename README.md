@@ -9,5 +9,5 @@ git clone https://github.com/locness3/kanboard-modern-CSS.git KanboardModernCss
 ```
 You might need to run `git clone` as sudo.
 
-## Screenshots
+---
 ![Plugin screenshot](/screenshots/main.png)
