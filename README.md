@@ -1,3 +1,5 @@
+![Plugin screenshot](/screenshots/main.png)
+
 # Kanboard modern CSS
 A CSS plugin for Kanboard to make it look more modern, while keeping a minimalistic look.
 Based on [kanboard/plugin-example-css](https://github.com/kanboard/plugin-example-css).
@@ -8,6 +10,3 @@ cd <your kanboard directory>/plugins
 git clone https://github.com/locness3/kanboard-modern-CSS.git KanboardModernCss
 ```
 You might need to run `git clone` as sudo.
-
----
-![Plugin screenshot](/screenshots/main.png)
