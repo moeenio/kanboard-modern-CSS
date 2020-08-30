@@ -18,12 +18,17 @@
 /* Fonts */
 
 body {
-  color: var(--text-color);
+  color: var(--color-primary);
   font-family: "Inter", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
+}
+
+/* Generic */
+a .fa {
+  color: inherit;
 }
 
 /* Buttons */
@@ -174,6 +179,7 @@ header .notification a .fa {
 }
 
 #board td {
+  padding: .5em 5px;
   border-radius: 0 0 5px 5px;
 }
 
@@ -230,6 +236,61 @@ header .notification a .fa {
 
 .board-column-title a .fa:before {
   content: "\f141";
+}
+
+/* Task cards */
+
+.task-board {
+  margin-bottom: 15px;
+  border: none;
+  border-left: 2px solid transparent;
+  background-color: white !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 25%);
+}
+
+div.task-board-recent {
+  border-width: 4px;
+}
+
+.task-board-header .dropdown a strong {
+  display: flex;
+  align-items: center;
+}
+
+.task-board-header .dropdown a i, .task-board-header a.js-modal-large {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding-right: 0;
+  text-decoration: none !important;
+  border-radius: 5px;
+}
+
+.task-board-header .dropdown a i:hover,
+.task-board-header a.js-modal-large:hover {
+  color: var(--accent-color);
+  background-color: var(--accent-color-transparent);
+}
+
+.task-board-header .dropdown a i::before {
+  content: "\f141";
+}
+
+.task-board-header a.js-modal-large {
+	position: absolute;
+	top: 2px;
+	right: 30px;
+}
+
+.task-board-header a.js-modal-large i {
+  padding-right: 0;
+}
+
+.task-board-title {
+  font-weight: bold;
 }
 
 .views li {
