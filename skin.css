@@ -255,6 +255,8 @@ div.task-board-recent {
 .task-board-header .dropdown a strong {
   display: flex;
   align-items: center;
+  font-weight: normal;
+  color: grey;
 }
 
 .task-board-header .dropdown a i, .task-board-header a.js-modal-large {
@@ -265,6 +267,7 @@ div.task-board-recent {
   justify-content: center;
   margin-left: auto;
   padding-right: 0;
+  color: var(--color-primary);
   text-decoration: none !important;
   border-radius: 5px;
 }
