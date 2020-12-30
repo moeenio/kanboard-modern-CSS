@@ -10,10 +10,16 @@
 :root {
   --accent-color: #6C01DF;
   --accent-color-transparent: #6C01DF20;
-  --color-primary: #1f1727; /* This variable is from Kanboard. */
+  /* These variables are from Kanboard. */
+  --color-primary: #1f1727;
+  --color-lighter: #f3f3f3;
 }
   
 @import url('https://rsms.me/inter/inter.css');
+
+* {
+  box-sizing: border-box;
+}
 
 /* Fonts */
 
@@ -162,6 +168,12 @@ header .notification a .fa {
   background-color: #00000030;
 }
 
+.project-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* Task board */
 
 #board {
@@ -171,7 +183,7 @@ header .notification a .fa {
 
 #board td, .board-column-header {
   border: none;
-  background-color: #f3f3f3;
+  background-color: var(--color-lighter);
 }
 
 .board-column-header {
@@ -296,10 +308,26 @@ div.task-board-recent {
   font-weight: bold;
 }
 
+.project-header .dropdown-component {
+  display: inline-block;
+  float: none;
+}
+
+.views {
+  display: flex;
+  width: auto;
+}
+
+.views-switcher-component, .views {
+  margin-top: 0 !important;
+}
+
 .views li {
+  display: inline-block !important;
   text-align: center;
   padding: 8px 8px;
   margin: 5px;
+  float: none;
   border: none;
   background-color: transparent;
   border-radius: 5px;
@@ -318,3 +346,42 @@ div.task-board-recent {
   text-decoration: none;
 }
 
+.project-header .filter-box-component {
+  margin-left: auto;
+}
+
+.filter-box .input-addon-item, .filter-box .input-addon-field {
+  color: var(--color-primary);
+  border: none;
+  background-color: var(--color-lighter);
+}
+
+.filter-box .input-addon-field {
+  padding: 8px;
+}
+
+.filter-box .input-addon-item {
+  padding: 0;
+}
+
+.filter-box .input-addon-item .dropdown a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+.filter-box .input-addon-item .dropdown a.active-dropdown-menu {
+  color: var(--accent-color);
+  background-color: var(--accent-color-transparent);
+}
+
+@media only screen and (max-width: 560px) {
+  .project-header {
+    padding-top: 0;
+  }
+
+  .filter-box-component {
+    flex-grow: 1;
+  }
+}
