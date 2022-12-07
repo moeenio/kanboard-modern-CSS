@@ -1,5 +1,3 @@
-![Plugin screenshot](/screenshots/main.png)
-
 # Kanboard modern CSS
 A CSS plugin for Kanboard to make it look more modern, while keeping a minimalistic look.
 Based on [kanboard/plugin-example-css](https://github.com/kanboard/plugin-example-css).
