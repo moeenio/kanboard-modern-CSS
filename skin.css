@@ -389,12 +389,27 @@ div.task-board-recent {
   font-weight: bold;
 }
 
+/* Task view page */
+.task-summary-container {
+  background-color: transparent !important;
   border: none;
+  border-top: 5px solid transparent;
+  border-radius: 0;
 }
 
+.task-summary-column > ul.no-bullet > li:not(:last-child) {
+  margin-bottom: 1em;
 }
 
+.task-summary-column > ul.no-bullet > li > strong {
+  display: block;
+  font-weight: normal;
+  font-size: 0.95em;
+  color: var(--color-medium);
 }
 
+.task-summary-column > ul.no-bullet > li > span {
+  font-weight: bold;
+  font-size: 1em;
   color: var(--color-primary);
 }
